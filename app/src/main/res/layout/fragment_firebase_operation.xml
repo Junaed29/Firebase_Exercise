@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirebaseOperationFragment">
+
+
+    <Button
+        android:enabled="false"
+        android:id="@+id/createbuttonId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create A Document"
+        style="@style/Widget.AppCompat.Button.Colored"
+        app:layout_constraintBottom_toTopOf="@+id/readbuttonId"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/readbuttonId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:text="Read A document"
+        app:layout_constraintBottom_toTopOf="@+id/updatebuttonId"
+        app:layout_constraintEnd_toEndOf="@+id/createbuttonId"
+        app:layout_constraintStart_toStartOf="@+id/createbuttonId"
+        app:layout_constraintTop_toBottomOf="@+id/createbuttonId" />
+
+    <Button
+        android:id="@+id/updatebuttonId"
+        android:layout_width="wrap_content"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_height="wrap_content"
+        android:text="Update a Document"
+        app:layout_constraintBottom_toTopOf="@+id/deletebuttonId"
+        app:layout_constraintEnd_toEndOf="@+id/readbuttonId"
+        app:layout_constraintStart_toStartOf="@+id/readbuttonId"
+        app:layout_constraintTop_toBottomOf="@+id/readbuttonId" />
+
+    <Button
+        android:id="@+id/deletebuttonId"
+        android:layout_width="wrap_content"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_height="wrap_content"
+        android:text="Delete a Document"
+        app:layout_constraintBottom_toTopOf="@+id/listbuttonId"
+        app:layout_constraintEnd_toEndOf="@+id/updatebuttonId"
+        app:layout_constraintStart_toStartOf="@+id/updatebuttonId"
+        app:layout_constraintTop_toBottomOf="@+id/updatebuttonId" />
+
+    <Button
+        android:id="@+id/listbuttonId"
+        android:layout_width="wrap_content"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_height="wrap_content"
+        android:text="Get a list of all documents"
+        app:layout_constraintBottom_toTopOf="@+id/realbuttonId"
+        app:layout_constraintEnd_toEndOf="@+id/deletebuttonId"
+        app:layout_constraintStart_toStartOf="@+id/deletebuttonId"
+        app:layout_constraintTop_toBottomOf="@+id/deletebuttonId" />
+
+    <Button
+        android:id="@+id/realbuttonId"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="get list of all docs with real time database"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/listbuttonId"
+        app:layout_constraintStart_toStartOf="@+id/listbuttonId"
+        app:layout_constraintTop_toBottomOf="@+id/listbuttonId" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

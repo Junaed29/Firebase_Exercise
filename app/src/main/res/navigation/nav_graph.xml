@@ -41,4 +41,9 @@
         android:name="com.jsc.firebase_exercise.FirebaseOperationFragment"
         android:label="fragment_firebase_operation"
         tools:layout="@layout/fragment_firebase_operation" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.jsc.firebase_exercise.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
 </navigation>
